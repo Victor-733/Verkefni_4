@@ -1,0 +1,46 @@
+/*
+ * Using SASS mixins with arguments
+ */
+/*
+ * Using functions in SASS
+ */
+/*
+ * SASS allows style rules to be nested inside of other rules, which causes
+ * the nested rules to only apply within the outer rule's selector
+ */
+/* 
+ * SASS Variables are defined with a $ character
+ * and can have different kinds of data types: color, string, boolean, multi-value
+ */
+/* 
+ * SASS Variables are defined with a $ character
+ * and can have different kinds of data types: color, string, boolean, multi-value
+ */
+h1, h2 {
+  color: navy; }
+
+#mypara {
+  font-size: 18px;
+  border: 1px solid navy;
+  padding: 15px 15px 15px 15px; }
+
+#mypara:after {
+  content: " with an appended string"; }
+
+header:hover {
+  filter: invert(100%); }
+
+footer {
+  background-color: #19dc3a; }
+
+ul {
+  background-color: #4d4d4d;
+  color: white; }
+
+footer:hover {
+  color: white; }
+
+ul:hover {
+  color: black; }
+
+/*# sourceMappingURL=main.css.map */

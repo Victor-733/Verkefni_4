@@ -1,0 +1,39 @@
+@import "mixin_styles";
+
+body {
+	margin: 0 auto;
+}
+header {
+	background-color: #ff3a3a;
+	padding: 2em;
+}
+footer {
+	background-color: #ff3a3a;
+	padding: 2em;
+}
+h1 {
+	margin: 0;
+}
+p {
+	@include text;
+}
+img {
+	max-height: 12em;
+	max-width: 12em;
+}
+.left-text:hover {
+	background-color: darken(white, 30%);
+}
+.right-text:hover {
+	background-color: black;
+	color: grey;
+	color: lighten(black, 100%);
+}
+header:hover {
+	filter: invert(100%);
+}
+div {
+	p {
+		font-family: $main-font;
+	}
+}

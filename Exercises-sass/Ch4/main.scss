@@ -1,0 +1,54 @@
+@import "mixin_styles";
+@import "nested_styles";
+@import "ops_styles";
+@import "var_styles";
+
+$headerBackground: rgb(255, 43, 43);
+$BorderColor: black;
+$BorderStyle: solid; 
+$BorderThicc: 2px;
+$text: $BorderThicc $BorderStyle $BorderColor; 
+$listcolor: black;
+
+header {
+	background-color: $headerBackground;
+ 	h1{
+		margin: 0;
+	}
+}
+header:hover {
+	filter: invert(100%);
+}
+
+body {
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.container {
+	@include container;
+}
+
+.content {
+	@include marginTopBot;
+}
+
+footer {
+	background-color: $headerBackground;
+	@include topbotPadding;
+}
+
+footer:hover {
+	background-color: darken($headerBackground, 10%);
+}
+
+.text {
+	border: $text;
+}
+
+ul {
+	color: $listcolor;
+}
+ul:hover {
+	color: lighten($listcolor, 50%);
+}

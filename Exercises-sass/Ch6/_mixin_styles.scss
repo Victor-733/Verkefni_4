@@ -1,0 +1,39 @@
+$bordercolor: solid black;
+$containermargin: 0 auto;
+$grid-rows: 1fr 1fr 1fr;
+$grid-columns: 1fr 1fr;
+$main-font: "arial";
+
+
+@mixin text {
+	padding: 1em;
+	border: 3px $bordercolor;
+}
+
+.shrek {
+	margin: $containermargin;
+	max-width: 65em;
+}
+.main-content {
+	display: grid;
+	grid-template-rows: $grid-rows;
+	grid-template-columns: $grid-columns;
+	grid-gap: 2px;
+}
+.left-party {
+	display: grid;
+	padding: 1em;
+	justify-items: end;
+}
+.right-party {
+	transform: scaleX(-1);
+	display: grid;
+	justify-items: end;
+	padding: 1em;
+}
+.left-party:hover {
+	color: lighten(#da251d, 30%);
+}
+.right-party:hover {
+	color: darken(#da251d, 30%);
+}

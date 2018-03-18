@@ -1,0 +1,53 @@
+/*
+ * SASS mixins are declared with the @mixin directive
+ * and used with the @include directive
+ */
+/*
+ * SASS allows style rules to be nested inside of other rules, which causes
+ * the nested rules to only apply within the outer rule's selector
+ */
+/*
+ * SASS Operators example
+ */
+/* 
+ * SASS Variables are defined with a $ character
+ * and can have different kinds of data types: color, string, boolean, multi-value
+ */
+header {
+  background-color: #ff2b2b; }
+  header h1 {
+    margin: 0; }
+
+header:hover {
+  filter: invert(100%); }
+
+body {
+  margin: 0;
+  box-sizing: border-box; }
+
+.container {
+  margin: 0 auto;
+  max-width: 55em; }
+
+.content {
+  margin-top: 2em;
+  margin-bottom: 2em; }
+
+footer {
+  background-color: #ff2b2b;
+  padding-top: 2em;
+  padding-bottom: 2em; }
+
+footer:hover {
+  background-color: #f70000; }
+
+.text {
+  border: 2px solid black; }
+
+ul {
+  color: black; }
+
+ul:hover {
+  color: gray; }
+
+/*# sourceMappingURL=main.css.map */
